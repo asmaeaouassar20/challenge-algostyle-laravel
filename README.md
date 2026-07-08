@@ -39,3 +39,29 @@ php artisan migrate --seed
 ```
 php artisan serve
 ```
+
+
+## Résoluton des erreurs courantes 
+
+### Erreur : ``` vendor/autoload.php ``` introuvable
+```
+rmdir /s vendor
+del composer.lock
+composer install
+```
+### Erreur : ``` MissingAppKeyException ```
+```
+copy .env.example .env
+php artisan key:generate
+```
+
+### Erreur : Base de données SQLite absente
+```
+php artisan migrate --seed
+```
+
+### Erreur : cache bloquant
+```
+php artisan config:clear
+php artisan cache:clear
+```
