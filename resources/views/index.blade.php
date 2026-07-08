@@ -1,3 +1,7 @@
+@extends('layout')
+
+
+@section('content')
 
 
 
@@ -20,7 +24,7 @@
         @foreach($students as $student)
             <tr>
                 <td>{{ $student->id }}</td>
-                <td>{{ asset('photos/' . $student->image) }}</td>
+                <td><img class="user-photo" src="{{ asset('photos/' . $student->image) }}" alt="user photo" /></td>
                 <td>{{ $student->name }}</td>
                 <td>{{ $student->email }}</td>
                 <td>{{ $student->phone }}</td>
@@ -37,3 +41,4 @@
 @endif
 
 <a href="{{ route('students.create') }}">Add Student</a>
+@endsection
