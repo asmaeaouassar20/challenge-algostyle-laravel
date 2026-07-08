@@ -56,7 +56,7 @@
     </tbody>
 </table>
 @else  
-<div class="my-3 alert alert-warning"> No student Yet</div>
+<div class="my-3 alert alert-warning w-75"> No student Yet</div>
 @endif
 
 <a class="btn btn-primary mb-3" href="{{ route('students.create') }}">Add Student</a>

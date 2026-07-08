@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h4>Create Student</h4>
+<h4 class="text-primary my-2">Create Student</h4>
 @if($errors->any())
     <div class="py-4 alert alert-danger">
         <ul>
