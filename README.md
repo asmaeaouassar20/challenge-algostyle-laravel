@@ -65,3 +65,20 @@ php artisan migrate --seed
 php artisan config:clear
 php artisan cache:clear
 ```
+
+## aperçu
+### Home Page
+<img width="1915" height="511" alt="image" src="https://github.com/user-attachments/assets/d2ee17d8-81f4-4544-82eb-a7c5e7c58ee0" />
+
+### index
+<img width="1915" height="552" alt="image" src="https://github.com/user-attachments/assets/1743880c-4a06-4f01-b4b3-3779774769d9" />
+
+### create
+<img width="1918" height="857" alt="image" src="https://github.com/user-attachments/assets/ee2a92c2-0d0f-4b6d-be16-56b3ef3e6740" />
+
+### edit
+<img width="1915" height="880" alt="image" src="https://github.com/user-attachments/assets/35ef32f4-4889-4547-bb35-ffa3061ada2e" />
+
+
+
+
