@@ -41,7 +41,7 @@ php artisan serve
 ```
 
 
-## Résoluton des erreurs courantes 
+## Résolution des erreurs courantes 
 
 ### Erreur : ``` vendor/autoload.php ``` introuvable
 ```
