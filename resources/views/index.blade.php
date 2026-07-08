@@ -19,6 +19,7 @@
             <th>Created at</th>
             <th>Updated at</th>
             <th></th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -33,6 +34,9 @@
                 <td>{{ $student->description }}</td>
                 <td>{{ $student->created_at }}</td>
                 <td>{{ $student->updated_at }}</td>
+                <td>
+                    <a href="{{ route('students.show' , $student) }}" >show</a>
+                </td>
                 <td>
                     <form method="post" action="{{ route('students.destroy' , $student) }}">
                         @method('DELETE')

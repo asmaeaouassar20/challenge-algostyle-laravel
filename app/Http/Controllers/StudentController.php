@@ -42,6 +42,10 @@ class StudentController extends Controller
         return redirect(route('students.index'))->with('success','Student added successfully');
     }
 
+    public function show(Student $student){
+        return view('show' , ['student' => $student]);
+    }
+
     public function destroy(Student $student){
         $image = $student->image;
         $path = public_path('photos/'.$image);
