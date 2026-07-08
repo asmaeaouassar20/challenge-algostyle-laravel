@@ -52,11 +52,31 @@
             text-decoration: none;
         }
         main{
-            margin-left: 220px;
-            background-color: yellow;
+            margin-left: 220px;            
             margin-top:15px;
         }
 
+
+        /*  home page */
+        .home-icon{
+            width: 200px;
+            height: 200px;
+        }
+        .home-container{
+            margin: 20px 0 0 40px;
+            display: flex;
+            gap: 30px;
+        }
+        .home-container a{
+            display: block;    
+            border-radius: 8px;
+            padding: 8px;
+        }
+        .home-container a:hover{
+            background-color: #D4E6FE;
+        }
+        .home-container a img{
+        }
         .user-photo{
             width: 80px;
             height: 80px;
