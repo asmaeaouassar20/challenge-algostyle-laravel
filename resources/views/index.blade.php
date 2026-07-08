@@ -4,13 +4,13 @@
 @section('content')
 
 @if(session()->has('success'))
-<div>
+<div class="my-3 alert alert-success">
     {{ session('success') }}
 </div>
 @endif
 
 @if(count($students)>0)
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>ID</th>
@@ -40,15 +40,15 @@
                 <td>{{ $student->created_at }}</td>
                 <td>{{ $student->updated_at }}</td>
                 <td>
-                    <a href="{{ route('students.show' , $student) }}" >show</a>
+                    <a class="btn btn-info" href="{{ route('students.show' , $student) }}" >show</a>
                 </td>
                 <td>
-                    <a href="{{ route('students.edit' , $student) }}">edit</a>
+                    <a class="btn btn-success" href="{{ route('students.edit' , $student) }}">edit</a>
                 </td>
                 <td>
                     <form method="post" action="{{ route('students.destroy' , $student) }}">
                         @method('DELETE')
-                        <button type="submit">delete</button>
+                        <button class="btn btn-danger" type="submit">delete</button>
                     </form>
                 </td>
             </tr>
@@ -56,10 +56,10 @@
     </tbody>
 </table>
 @else  
-<div> No student Yet</div>
+<div class="my-3 alert alert-warning"> No student Yet</div>
 @endif
 
-<a href="{{ route('students.create') }}">Add Student</a>
+<a class="btn btn-primary mb-3" href="{{ route('students.create') }}">Add Student</a>
 
 {{ $students->links() }}
 @endsection
